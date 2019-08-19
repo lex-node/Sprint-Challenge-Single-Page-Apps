@@ -27,26 +27,41 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Explain benefit(s) using `client-side routing`?
 > Answer:
+with client-side routing, the user's browser (the "client") does much of the work that would
+be done by a server in a more traditional client/server model
+
+this has pros & cons, but the benefit is that when state changes, the client can surgically
+adjust the relevant parts of the web page without a completely refreshed page; OTOH, this
+means the page may take longer to load on the front-end
+
 - [ ] What does AJAX stand for?
 > Answer:
+
+asynchronous javascript and xml
+
 - [ ] What are `controlled components` in React?
 > Answer:
+
+an input HTML/jsx form element that has its contents controlled by the component state rather
+than controlling its own state
+
 - [ ] Name three tools/libraries for making AJAX requests.
 > Answer:
+ axios, fetch, jquery
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on GitHub.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
-- [ ] Implement the project on this branch, committing changes regularly.
-- [ ] Push commits: `git push origin <firstName-lastName>`.
-- [ ] **LOOK** at your project directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
-- [ ] **RUN** `yarn install` or `npm install` to retrieve the client-side dependencies.
-- [ ] **RUN** `yarn start` or `npm start` to fire up your React application.
+- [X] Create a forked copy of this project.
+- [X] Add TL as collaborator on GitHub.
+- [X] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [X] Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
+- [X] Implement the project on this branch, committing changes regularly.
+- [X] Push commits: `git push origin <firstName-lastName>`.
+- [X] **LOOK** at your project directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
+- [X] **RUN** `yarn install` or `npm install` to retrieve the client-side dependencies.
+- [X] **RUN** `yarn start` or `npm start` to fire up your React application.
 
 
 #### Exceeded rate limits?
@@ -110,7 +125,7 @@ Add a Router to this application using [React Router](https://reacttraining.com/
 
 > **Tip:** Review the [examples on the React Router site.](https://reacttraining.com/react-router/web/guides/quick-start)
 
-- [ ] Start by wrapping your `root` component in the `BrowserRouter` component.
+- [X] Start by wrapping your `root` component in the `BrowserRouter` component.
 - [ ] Declare your routes with `<Route>` components (for each component created above.)
   - [ ] Include `/character`, `/location` and `/episode` routes.
 - [ ] In your `App` component, add a navigation menu, [tab bar](https://react.semantic-ui.com/modules/tab/#types-basic), or similar. (Hint: Make sure to use React Routers `NavLink` to link to your different pages.)
