@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
+import CharacterCard from "./CharacterCard";
 
 const CharacterList = (props) => {
     const [characterList, setCharacterList] = useState([]);
@@ -47,22 +48,11 @@ const CharacterList = (props) => {
     }, []);
 
     return (
-
-
         <section className="character-list grid-view">
             {characterList.map(character => {
                 return (
-                <div>
-                    <li>Name: {character.name}</li>
-                    <li>Status: {character.status}</li>
-                    <li>Species: {character.species}</li>
-                     <li>Type: {character.type}</li>
-                    <li>Gender: {character.gender}</li>
-                    <li>Origin: {character.origin.name}</li>
-                    <li>Location: {character.location.name}</li>
-                    <img src="character.image" alt={character.name}/>
-                </div>
-                    )
+                    <CharacterCard character={character}/>
+                )
             })}
         </section>
 
