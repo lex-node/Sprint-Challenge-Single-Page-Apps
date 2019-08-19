@@ -3,6 +3,7 @@ import axios from "axios";
 import CharacterCard from "./CharacterCard";
 import {Card} from 'semantic-ui-react'
 import 'semantic-ui/dist/semantic.min.css';
+/*import SearchForm from "./SearchForm";*/
 
 const CharacterList = (props) => {
     const [characterList, setCharacterList] = useState([]);

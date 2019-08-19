@@ -10,8 +10,10 @@ import TabNav from "./components/TabNav";
 export default function App() {
   return (
     <main>
-        <Header/>
-        <TabNav/>
+        <div className="container">
+            <Header/>
+            <TabNav/>
+        </div>
        <Route exact path="/" component={WelcomePage}/>
        <Route exact path="/characters" component={CharacterList}/>
        <Route exact path="/locations" component={LocationsList}/>

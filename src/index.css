@@ -40,4 +40,10 @@ header h1 {
 
 .navbar {
   display: flex;
+  justify-content: space-evenly;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }

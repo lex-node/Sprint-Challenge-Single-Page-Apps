@@ -3,6 +3,7 @@ import axios from "axios";
 import LocationCard from "./LocationCard";
 import {Card} from 'semantic-ui-react'
 import 'semantic-ui/dist/semantic.min.css';
+/*import SearchForm from "./SearchForm";*/
 
 const LocationsList = (props) => {
 
