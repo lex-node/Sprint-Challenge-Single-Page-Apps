@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
+import {Card} from 'semantic-ui-react'
+import 'semantic-ui/dist/semantic.min.css';
 
 const CharacterList = (props) => {
     const [characterList, setCharacterList] = useState([]);
@@ -48,13 +50,13 @@ const CharacterList = (props) => {
     }, []);
 
     return (
-        <section className="character-list grid-view">
+        <Card.Group className="character-list grid-view" itemsPerRow={2}>
             {characterList.map(character => {
                 return (
                     <CharacterCard character={character}/>
                 )
             })}
-        </section>
+        </Card.Group>
 
     );
 }
@@ -82,7 +84,7 @@ Create 3 page components to display data from 3 API endpoints:
 - [ ] Create a component to show a grid of data from the API.
   - [X] Include `useState`, `useEffect`.
   - [ X] Use `Axios` (or `fetch`) to make a GET request to the 3 endpoints.
-  - [ ] Display API results using a [card](https://react.semantic-ui.com/views/card/#content-image-card) grid or
+  - [X] Display API results using a [card](https://react.semantic-ui.com/views/card/#content-image-card) grid or
   [list](https://react.semantic-ui.com/elements/list/#content-icon) UI on the page.
   - [ ] Design each 'page' layout based on the available fields.
   (See docs for [schema](https://rickandmortyapi.com/documentation/#character-schema) details.)
