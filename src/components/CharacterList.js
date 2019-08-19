@@ -6,8 +6,6 @@ import 'semantic-ui/dist/semantic.min.css';
 
 const CharacterList = (props) => {
     const [characterList, setCharacterList] = useState([]);
-    const [episodeList, setEpisodeList] = useState([]);
-
 
     useEffect(() => {
         axios
@@ -22,18 +20,6 @@ const CharacterList = (props) => {
 
     }, []);
 
-    useEffect(() => {
-        axios
-            .get("https://rickandmortyapi.com/api/episode/")
-            .then(response => {
-                console.log(response.data.results);
-                setEpisodeList(response.data.results);
-            })
-            .catch(error => {
-                console.error(error);
-            });
-
-    }, []);
 
     return (
         <Card.Group itemsPerRow={2}>
